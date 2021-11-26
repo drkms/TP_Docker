@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<HTML>
+<HEAD>
+<TITLE>Bonjour</TITLE>
+</HEAD>
+<BODY>
+<h1> *** Groupe JAVA *** </h1>
+	<h2>Tapez votre prénom</h2>
+	<form action="bonjour" method="post">
+		<hr>
+		<table>
+			<tr>
+				<td>Prénom</td>
+				<td><input name="prenom" value="" type="text" size="15">
+				<td><input type="submit" value="Envoyer"></td>
+			</tr>
+		</table>
+		<hr>
+	</form>
+		<span th:text = ${message}></span>
+</BODY>
+</HTML>
